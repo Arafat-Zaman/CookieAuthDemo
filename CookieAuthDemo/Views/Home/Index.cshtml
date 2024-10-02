@@ -1,0 +1,7 @@
+﻿<h2>Welcome, @User.Identity.Name</h2>
+
+@if (User.IsInRole("Administrator"))
+{
+    <p>You are an admin.</p>
+}
+<a asp-controller="Account" asp-action="Logout">Logout</a>
